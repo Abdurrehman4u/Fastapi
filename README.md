@@ -1,5 +1,5 @@
 # Cats and Dog Classifier
-### To download the required libraries use requirement.txt
+### To download the required libraries use requirements.txt
 ```bash
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
