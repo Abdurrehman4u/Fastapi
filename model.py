@@ -5,7 +5,7 @@ import numpy as np
 class Model:
     
     def __init__(self):
-        self.k_model = load_model('./finetuned.keras')
+        self.k_model = load_model('/finetuned.keras')
     
     def getPrediction(self,filename):
         img = cv2.imread(filename)
