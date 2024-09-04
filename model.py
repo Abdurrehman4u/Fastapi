@@ -1,15 +1,21 @@
 from keras.models import load_model
 import cv2
+import os
 import numpy as np
 import gdown
 class Model:
-    def download_model():
+
+    def __init__(self):
+        if os.path.exists("./finetuned.keras") == 0:
+            self.download_model()
+        print(f"model exists")
+        self.k_model = load_model('./finetuned.keras')
+
+    def download_model(self):
         url = "https://drive.google.com/uc?export=download&id=18cPcOnLm3sTy3lqXQGapKzR2xH6XMAfY"
         output = "finetuned.keras"
         gdown.download(url,output,quiet=True)
 
-    def __init__(self):
-        self.k_model = load_model('./finetuned.keras')
     
     def getPrediction(self,filename):
         img = cv2.imread(filename)
