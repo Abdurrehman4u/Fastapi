@@ -1,0 +1,5 @@
+numpy
+keras
+keras2onnx
+fastapi[standard]
+opencv-python
