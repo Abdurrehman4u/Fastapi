@@ -9,3 +9,4 @@ requests==2.32.3
 h5py==3.11.0
 protobuf==4.25.4
 typing_extensions==4.12.2
+opencv-python==4.10.0.84
